@@ -1,86 +1,116 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import styles from './page.module.css';
+import Link from 'next/link';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-      </div>
+    <main className={styles.container}>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <span>+</span>
-        <Image
-          src="/amplify.svg"
-          alt="Amplify Logo"
-          width={45}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://docs.amplify.aws/gen2/"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Review documentation for Amplify's code-first DX (Gen 2).</p>
-        </a>
-
-        <a
-          href="https://docs.amplify.aws/gen2/start/quickstart/"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Quickstart <span>-&gt;</span>
-          </h2>
-          <p>Follow a tutorial to build a fullstack app with Amplify Gen 2.</p>
-        </a>
-
-        <a
-          href="https://docs.amplify.aws/gen2/build-a-backend/auth/set-up-auth/"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Auth <span>-&gt;</span>
-          </h2>
-          <p>Zero-config Auth UI components with social sign-in and MFA.</p>
-        </a>
-
-        <a
-          href="https://docs.amplify.aws/gen2/build-a-backend/data/set-up-data/"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Data <span>-&gt;</span>
-          </h2>
-          <p>
-            Fully-typed real-time API with NoSQL database.
+      {/* Hero Section */}
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroHeadline}>Transforming Job Matching with Cutting-Edge AI</h1>
+          <p className={styles.heroSubheadline}>
+            Experience the future of employment with TalanQ — Where technology meets opportunity.
           </p>
-        </a>
+          <button className={styles.heroCTA}>Discover How</button>
+        </div>
+        {/* Placeholder for Hero Image */}
+        <div className={styles.heroImagePlaceholder}></div>
+      </section>
+
+      {/* Bento Grid Section */}
+      <div className={styles.gridContainer}>
+
+        {/* About Us Card */}
+        <div className={styles.gridItem}>
+          <h2 className={styles.gridHeadline}>Innovating for a More Inclusive Job Market</h2>
+          <p className={styles.gridContent}>
+            TalanQ is dedicated to redefining the employment landscape. By integrating advanced AI with deep market insights, we tackle the unique challenges of modern job seekers and employers. Our mission is not only to simplify the hiring process but to ensure it's fair, efficient, and inclusive for all.
+          </p>
+          <button className={styles.gridCTA}>Learn More About Us</button>
+        </div>
+
+        {/* How It Works Card */}
+        <div className={styles.gridItem}>
+          <h2 className={styles.gridHeadline}>Precision Matching with Our AI-Driven Platform</h2>
+          <p className={styles.gridContent}>
+            Our platform does more than just match resumes to job descriptions. It understands skills, untaps potential, and aligns career aspirations with organizational needs. Discover a streamlined recruitment process that enhances how employers connect with the right talent, ensuring a 90% increase in successful job placements.
+          </p>
+          <button className={styles.gridCTA}>See It in Action</button>
+        </div>
+
+        {/* Our Impact Card */}
+        <div className={styles.gridItem}>
+          <h2 className={styles.gridHeadline}>Driving Success Through Sustainable Employment</h2>
+          <p className={styles.gridContent}>
+            At TalanQ, we are committed to making a tangible impact. Collaborating with both private and governmental sectors, we've facilitated remarkable growth in employment rates and helped numerous job seekers find fulfilling careers. Our approach supports Sustainable Development Goals by promoting decent work and economic growth.
+          </p>
+          <button className={styles.gridCTA}>View Our Success Stories</button>
+        </div>
+
+        {/* Call to Action Card */}
+        <div className={styles.gridItem}>
+          <h2 className={styles.gridHeadline}>Join the Employment Revolution</h2>
+          <p className={styles.gridContent}>
+            Ready to advance your career or boost your recruitment strategy? Join TalanQ today and be part of the movement towards a more efficient and just job market. Whether you're seeking talent or searching for a job, TalanQ is your gateway to a wealth of opportunities.
+          </p>
+          <button className={styles.gridCTA}>Get Started Now</button>
+        </div>
+
+        <div className={styles.gridContainer3}>
+
+             {/* Our Impact Card */}
+        <div className={styles.gridItem}>
+          <h2 className={styles.gridHeadline}>Driving Success Through Sustainable Employment</h2>
+          <p className={styles.gridContent}>
+            At TalanQ, we are committed to making a tangible impact. Collaborating with both private and governmental sectors, we've facilitated remarkable growth in employment rates and helped numerous job seekers find fulfilling careers. Our approach supports Sustainable Development Goals by promoting decent work and economic growth.
+          </p>
+          <button className={styles.gridCTA}>View Our Success Stories</button>
+        </div>
+
+        {/* Call to Action Card */}
+        <div className={styles.gridItem}>
+          <h2 className={styles.gridHeadline}>Join the Employment Revolution</h2>
+          <p className={styles.gridContent}>
+            Ready to advance your career or boost your recruitment strategy? Join TalanQ today and be part of the movement towards a more efficient and just job market. Whether you're seeking talent or searching for a job, TalanQ is your gateway to a wealth of opportunities.
+          </p>
+          <button className={styles.gridCTA}>Get Started Now</button>
+        </div>
+
+        
+
       </div>
+      <div className={styles.gridContainer3}>
+
+             {/* Our Impact Card */}
+        <div className={styles.gridItem}>
+          <h2 className={styles.gridHeadline}>Driving Success Through Sustainable Employment</h2>
+          <p className={styles.gridContent}>
+            At TalanQ, we are committed to making a tangible impact. Collaborating with both private and governmental sectors, we've facilitated remarkable growth in employment rates and helped numerous job seekers find fulfilling careers. Our approach supports Sustainable Development Goals by promoting decent work and economic growth.
+          </p>
+          <button className={styles.gridCTA}>View Our Success Stories</button>
+        </div>
+
+        {/* Call to Action Card */}
+        <div className={styles.gridItem}>
+          <h2 className={styles.gridHeadline}>Join the Employment Revolution</h2>
+          <p className={styles.gridContent}>
+            Ready to advance your career or boost your recruitment strategy? Join TalanQ today and be part of the movement towards a more efficient and just job market. Whether you're seeking talent or searching for a job, TalanQ is your gateway to a wealth of opportunities.
+          </p>
+          <button className={styles.gridCTA}>Get Started Now</button>
+        </div>
+
+        
+
+      </div>
+      </div>
+
+
+
+
     </main>
-  )
-}
+    );
+};
+
+export default Home;

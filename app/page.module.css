@@ -128,4 +128,49 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
 }
+
+/* ... existing styles ... */
+
+.gridItem {
+  background-color: #fff; /* Assuming a white background */
+  border-radius: 8px; /* Rounded corners, adjust as needed */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 24px; /* Padding inside the card */
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Spacing between elements */
+}
+
+.gridHeadline {
+  font-size: 1.25rem; /* Large, readable font size */
+  font-weight: 600; /* Slightly bolder font weight */
+  margin-bottom: 8px; /* Space between title and content */
+  color: #333; /* Dark color for contrast */
+}
+
+.gridContent {
+  font-size: 1rem; /* Standard font size */
+  color: #666; /* Lighter text for the content */
+  flex-grow: 1; /* Allow content to fill space */
+}
+
+.gridCTA {
+  background-color: #0056b3; /* Color for the button */
+  color: white;
+  padding: 12px 24px; /* Larger padding for a touch-friendly button */
+  border: none;
+  border-radius: 4px; /* Match your design's border-radius */
+  font-weight: 600; /* Bold text */
+  text-transform: uppercase; /* UPPERCASE text */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.gridCTA:hover {
+  background-color: #004494; /* Slightly darker on hover */
+}
+
+/* ... additional styles as needed ... */
+

@@ -61,14 +61,13 @@ const Home: React.FC = () => {
         <div className={styles.gridContainer3}>
 
              {/* Our Impact Card */}
-        <div className={styles.gridItem}>
-          <h2 className={styles.gridHeadline}>Driving Success Through Sustainable Employment</h2>
-          <p className={styles.gridContent}>
-            At TalanQ, we are committed to making a tangible impact. Collaborating with both private and governmental sectors, we've facilitated remarkable growth in employment rates and helped numerous job seekers find fulfilling careers. Our approach supports Sustainable Development Goals by promoting decent work and economic growth.
-          </p>
-          <button className={styles.gridCTA}>View Our Success Stories</button>
-        </div>
-
+             <div className={styles.gridItem}>
+            <h2 className={styles.gridHeadline}>Title Here</h2>
+            <p className={styles.gridContent}>
+            Content goes here. Keep it brief and to the point to match the style of the design.
+            </p>
+            <button className={styles.gridCTA}>CALL TO ACTION</button>
+            </div>
         {/* Call to Action Card */}
         <div className={styles.gridItem}>
           <h2 className={styles.gridHeadline}>Join the Employment Revolution</h2>

@@ -113,3 +113,8 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+
+// git add .
+// git commit -m "Updated background color”
+// git push origin main
